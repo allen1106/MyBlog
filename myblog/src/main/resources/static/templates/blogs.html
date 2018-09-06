@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      layout:decorator="base_template">
+<head>
+    <link rel="stylesheet" href="/md-editor/md-editor.css">
+    <!--<script type="text/javascript" src="/ckeditor/ckeditor.js"></script>-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
+    <script type="text/javascript" src="/md-editor/md-editor.js"></script>
+    <script type="text/javascript" src="/js/blog-edit.js"></script>
+    <title>博客管理</title>
+</head>
+<body>
+    <div layout:fragment="content">
+        <div class="md-editor" id="md-editor">
+            <div class="md-title overflow">
+                <input class="title left" name="title" id="title" th:value="${str}"/>
+                <button class="post btn right" id="post-btn">发布博客</button>
+            </div>
+            <div class="md-content overflow">
+                <div class="edit-container left">
+                    <textarea class="edit-area" id="edit-area" th:text="${mdStr}"></textarea>
+                </div>
+                <div class="show-container right">
+                    <article></article>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

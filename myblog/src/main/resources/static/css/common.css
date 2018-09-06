@@ -1,0 +1,17 @@
+.main {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.overflow {
+    overflow: hidden;
+}

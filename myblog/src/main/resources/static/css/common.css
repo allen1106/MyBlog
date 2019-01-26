@@ -4,6 +4,10 @@
     background-color: #fff;
 }
 
+.height-inherit {
+    height: 100%;
+}
+
 .left {
     float: left;
 }

@@ -11,18 +11,18 @@
     <title>博客管理</title>
 </head>
 <body>
-    <div layout:fragment="content">
-        <div class="md-editor" id="md-editor">
+    <div layout:fragment="content" class="height-inherit">
+        <div class="md-editor height-inherit" id="md-editor">
             <div class="md-title overflow">
-                <input class="title left" name="title" id="title" th:value="${str}"/>
+                <input class="title left" name="title" id="title" th:value="${title}"/>
                 <button class="post btn right" id="post-btn">发布博客</button>
             </div>
             <div class="md-content overflow">
-                <div class="edit-container left">
-                    <textarea class="edit-area" id="edit-area" th:text="${mdStr}"></textarea>
+                <div class="edit-container height-inherit left">
+                    <textarea class="edit-area height-inherit" id="edit-area" th:text="${mdStr}"></textarea>
                 </div>
-                <div class="show-container right">
-                    <article></article>
+                <div class="show-container height-inherit right">
+                    <article class="height-inherit"></article>
                 </div>
             </div>
         </div>

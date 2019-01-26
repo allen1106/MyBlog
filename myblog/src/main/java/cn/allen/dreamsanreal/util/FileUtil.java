@@ -33,4 +33,19 @@ public class FileUtil {
 //        }
 //        System.out.println(s1);
 //    }
+
+    public static void main(String[] args) {
+        String a = new String("abc");
+        Integer b = new Integer(120);
+        Integer c = new Integer(120);
+        Integer d = Integer.valueOf(120);
+        Integer e = Integer.valueOf(120);
+        System.out.println(a.hashCode());
+        System.out.println(b.hashCode());
+        System.out.println(c.hashCode());
+        System.out.println(b == c);
+        System.out.println(c.equals(b));
+        System.out.println(d == e);
+        System.out.println(d.equals(e));
+    }
 }

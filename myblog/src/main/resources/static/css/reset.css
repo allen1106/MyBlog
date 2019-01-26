@@ -46,3 +46,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+input {
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}

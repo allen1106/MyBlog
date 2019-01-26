@@ -1,6 +1,7 @@
 /* initial style start */
 .main {
     width: 100%;
+    height: calc(100vh - 5em);
 }
 
 .md-editor {
@@ -121,6 +122,11 @@
     padding: 10px 2%;
 }
 
+.md-editor .md-content {
+    padding: 0 2%;
+    height: calc(100% - 90px);
+}
+
 .md-editor .md-title input {
     background-color: #F5F5F5;
     height: 100%;
@@ -148,7 +154,6 @@
 .md-editor .show-container article {
     padding: 20px;
     width: 100%;
-    height:500px;
 }
 
 .md-editor .edit-container .edit-area {

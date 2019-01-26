@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/iconmoon/style.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>登录</title>
+</head>
+<body>
+<div class="background">
+    <div class="login-container" id="login-container">
+        <div class="logo-title"></div>
+        <form action="login" method="post">
+            <div class="input-div username">
+                <label for="username" class="icon-login_account"></label>
+                <input class="input" type="text" id="username" name="username">
+            </div>
+            <div class="input-div password">
+                <label for="password" class="icon-login_password"></label>
+                <input class="input" type="password" id="password" name="password">
+            </div>
+            <!--<div class="input-div verify-code">-->
+                <!--<input class="input" type="text" id="verify-code">-->
+            <!--</div>-->
+            <div class="input-div">
+                <input class="login-btn" type="submit" id="login-btn" value="登录">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
